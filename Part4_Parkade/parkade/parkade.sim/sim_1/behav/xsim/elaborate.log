@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e0595384b85743de9b5c361e77d8fb1e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot parkade_tb_behav xil_defaultlib.parkade_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3009] 'clock_divider' remains a black-box since it has no binding entity [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/lab2-sd/Part4_Parkade/parkade/parkade.srcs/sim_1/new/parkade_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.parkade [parkade_default]
+Compiling architecture behavioral of entity xil_defaultlib.parkade_tb
+Built simulation snapshot parkade_tb_behav

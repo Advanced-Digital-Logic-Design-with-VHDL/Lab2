@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov  9 09:48:49 2019
+# Process ID: 10936
+# Current directory: C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16740 C:\Users\maade\Desktop\ECE 410 LAB\LAB 2\USB Stuff\lab2-sd\DNA\DNA_Sequence\DNA_Sequence.xpr
+# Log file: C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/vivado.log
+# Journal file: C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:20 . Memory (MB): peak = 801.129 ; gain = 181.961
+update_compile_order -fileset sources_1
+set_property top dna_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: dna
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 955.484 ; gain = 66.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dna' [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/dna.vhd:43]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/clock_divider.vhd:35' bound to instance 'divider' of component 'clock_divider' [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/dna.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/clock_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/clock_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'dna' (2#1) [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/dna.vhd:43]
+WARNING: [Synth 8-3331] design dna has unconnected port Data_LSB
+WARNING: [Synth 8-3331] design dna has unconnected port Data_MSB
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 994.836 ; gain = 106.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 994.836 ; gain = 106.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 994.836 ; gain = 106.105
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Clk_Btn_IBUF'. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'led6_r_OBUF'. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led6_g'. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led6_b'. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/maade/Desktop/ECE 410 LAB/LAB 2/USB Stuff/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/constrs_1/new/Zybo-Z7-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1319.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 1393.715 ; gain = 504.984
+9 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 1393.715 ; gain = 504.984
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 10:03:38 2019...

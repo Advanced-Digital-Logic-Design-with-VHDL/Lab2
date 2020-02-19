@@ -1,0 +1,1 @@
+-wto "8004a14fc6e44b0099818e54bd869653" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "dna_behav" "xil_defaultlib.dna" -log "elaborate.log" 

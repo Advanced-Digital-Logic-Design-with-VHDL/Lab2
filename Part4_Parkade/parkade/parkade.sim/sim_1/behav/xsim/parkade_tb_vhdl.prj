@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../parkade.srcs/sources_1/imports/new/parkade.vhd" \
+"../../../../parkade.srcs/sim_1/new/parkade_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,613 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 2724
+License: Customer
+
+Current time: 	Wed Oct 30 14:57:13 MDT 2019
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 817 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gaiya
+User home directory: C:/Users/gaiya
+User working directory: C:/Users/gaiya/Desktop/lab2-sd/New folder
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/gaiya/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/gaiya/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/gaiya/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/gaiya/Desktop/lab2-sd/New folder/vivado.log
+Vivado journal file location: 	C:/Users/gaiya/Desktop/lab2-sd/New folder/vivado.jou
+Engine tmp dir: 	C:/Users/gaiya/Desktop/lab2-sd/New folder/.Xil/Vivado-2724-e5-01-19
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 697 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\gaiya\Desktop\lab2-sd\New folder\SequenceDetector.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/gaiya/Desktop/lab2-sd' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+83619kb) [00:00:07]
+// [Engine Memory]: 649 MB (+529259kb) [00:00:07]
+// [GUI Memory]: 97 MB (+10875kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2622 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 48 MB. Current time: 10/30/19, 2:57:14 PM MDT
+// [Engine Memory]: 730 MB (+51015kb) [00:00:10]
+// Project name: SequenceDetector; location: C:/Users/gaiya/Desktop/lab2-sd/New folder; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'SequenceDetector_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Oct 30 14:57:48 2019] Launched synth_1... Run output will be captured here: C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Oct 30 14:58:25 2019] Launched impl_1... Run output will be captured here: C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 105 MB (+3822kb) [00:02:05]
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 65 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Oct 30 14:59:34 2019] Launched impl_1... Run output will be captured here: C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 188 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 903 MB. GUI used memory: 50 MB. Current time: 10/30/19, 3:02:48 PM MDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,502 MB. GUI used memory: 50 MB. Current time: 10/30/19, 3:02:57 PM MDT
+// [Engine Memory]: 1,525 MB (+795129kb) [00:05:53]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/zynq/devint/zynq/xc7z010/xc7z010.xgd; ZipEntry: xc7z010_detail.xgd elapsed time: 0.5s
+// [Engine Memory]: 1,610 MB (+8939kb) [00:05:54]
+// Device: addNotify
+// [GUI Memory]: 122 MB (+11898kb) [00:05:55]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1756 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z010clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1567.527 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1567.527 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1567.527 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1678.383 ; gain = 896.313 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 18 seconds
+// [GUI Memory]: 138 MB (+11010kb) [00:05:58]
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'SequenceDetector_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj SequenceDetector_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/gaiya/Desktop/lab2-sd/New folder/SequenceDetector.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+// [GUI Memory]: 145 MB (+161kb) [00:15:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,656 MB. GUI used memory: 85 MB. Current time: 10/30/19, 3:32:59 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,656 MB. GUI used memory: 80 MB. Current time: 10/30/19, 4:02:59 PM MDT
+// Elapsed time: 3660 seconds
+dismissDialog("Critical Messages"); // a (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cp): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 23 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "DNA_part3"); // Y (Q, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+// Elapsed time: 22 seconds
+setFolderChooser("C:/Users/gaiya/Desktop/lab2-sd/DNA");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 10 seconds
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "dna"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+// Elapsed time: 16 seconds
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 70 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+dismissFileChooser();
+// Elapsed time: 82 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+// Elapsed time: 19 seconds
+dismissFileChooser();
+// Elapsed time: 31 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+// Elapsed time: 29 seconds
+dismissFileChooser();
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+dismissFileChooser();
+// Elapsed time: 33 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+// Elapsed time: 16 seconds
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/gaiya/Downloads", 2); // ak (ag, JDialog)
+// Elapsed time: 19 seconds
+dismissFileChooser();
+// 'g' command handler elapsed time: 435 seconds
+dismissDialog("New Project"); // f (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cp): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 24 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "DNA_Sequence"); // Y (Q, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+setFolderChooser("C:/Users/gaiya/Desktop/lab2-sd/DNA");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "dna"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+// Elapsed time: 95 seconds
+setFileChooser("C:/Users/gaiya/Desktop/lab2-sd/DNA/Lab2_dna_SequenceDetector.bit");
+// Elapsed time: 16 seconds
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 51 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7z010clg"); // OverlayTextField (I, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z010clg400-1 ; 400 ; 100 ; 17600 ; 35200 ; 60 ; 0 ; 80 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 5, "xc7z010clg400-1", 0); // x (Q, f)
+selectComboBox(PAResourceEtoH.FPGAChooser_FAMILY, "Zynq-7000", 12); // w (D, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,656 MB. GUI used memory: 75 MB. Current time: 10/30/19, 4:15:52 PM MDT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,656 MB. GUI used memory: 82 MB. Current time: 10/30/19, 4:15:52 PM MDT
+// TclEventType: DESIGN_CLOSE
+// bx (f):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (C, J)
+// Tcl Message: close_project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project DNA_Sequence C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence -part xc7z010clg400-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// Tcl Message: close [ open C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/dna.vhd w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/dna.vhd 
+// I (cp): Define Module: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 -force -norecurse C:/Users/gaiya/Desktop/lab2-sd/DNA/Lab2_dna_SequenceDetector.bit 
+dismissDialog("New Project"); // f (cp)
+// Elapsed time: 279 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (Q, I)
+// Elapsed time: 15 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 0, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk ; in ; false ; 0 ; 0", 0, "false", 2); // ab (Q, I)
+// Elapsed time: 17 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 0, "Port Name", 0); // ab (Q, I)
+// Elapsed time: 24 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Data_in", 1, "Port Name", 0); // ab (Q, I)
+// Elapsed time: 14 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led6_r", 2, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led6_r ; in ; false ; 0 ; 0", 2, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 2, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B (f, I)
+// Elapsed time: 56 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led", 3, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; in ; false ; 0 ; 0", 3, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 3, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led6_r ; out ; false ; 0 ; 0", 2, "false", 2); // ab (Q, I)
+// Elapsed time: 21 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; out ; false ; 0 ; 0", 3, "false", 2); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; out ; true ; 0 ; 0", 3, "0", 3); // ab (Q, I)
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 3, "MSB", 3); // ab (Q, I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 721 seconds
+// [GUI Memory]: 156 MB (+3871kb) [01:26:42]
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Unsupported Constraints, Lab2_dna_SequenceDetector.bit]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Unsupported Constraints, Lab2_dna_SequenceDetector.bit]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectButton("PAResourceOtoP.OpenFileAction_FORMAT_OF_SPECIFIED_FILE_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Unsupported Constraints, Lab2_dna_SequenceDetector.bit]", 4, false); // B (D, cp)
+// Elapsed time: 98 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("dna.vhd", 257, 213); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "clock_divider"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 33 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/clock_divider.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/gaiya/Desktop/lab2-sd/DNA/DNA_Sequence/DNA_Sequence.srcs/sources_1/new/clock_divider.vhd 
+// I (cp): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 0, "Port Name", 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_out", 1, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_out ; in ; false ; 0 ; 0", 1, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 1, "Direction", 1); // ab (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// [GUI Memory]: 167 MB (+2796kb) [01:30:55]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_divider(Behavioral) (clock_divider.vhd)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_divider(Behavioral) (clock_divider.vhd)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("clock_divider.vhd", 138, 324); // cl (w, cp)
+selectCodeEditor("clock_divider.vhd", 76, 68); // cl (w, cp)
+selectCodeEditor("clock_divider.vhd", 2, 8); // cl (w, cp)
+typeControlKey((HResource) null, "clock_divider.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dna(Behavioral) (dna.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("dna.vhd", 257, 214); // cl (w, cp)
+// Elapsed time: 80 seconds
+selectCodeEditor("dna.vhd", 218, 275); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("dna.vhd", 270, 185); // cl (w, cp)
+selectCodeEditor("dna.vhd", 253, 196); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("dna.vhd", 272, 198); // cl (w, cp)
+typeControlKey((HResource) null, "dna.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("dna.vhd", 294, 283); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("dna.vhd", 662, 322); // cl (w, cp)
+selectCodeEditor("dna.vhd", 45, 347); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("dna.vhd", 543, 318); // cl (w, cp)
+selectCodeEditor("dna.vhd", 48, 353); // cl (w, cp)
+typeControlKey((HResource) null, "dna.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 11 seconds
+selectCodeEditor("dna.vhd", 564, 219); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("dna.vhd", 15, 209); // cl (w, cp)
+selectCodeEditor("dna.vhd", 88, 232); // cl (w, cp)
+selectCodeEditor("dna.vhd", 145, 105); // cl (w, cp)
+// Elapsed time: 52 seconds
+selectCodeEditor("dna.vhd", 650, 306); // cl (w, cp)
+selectCodeEditor("dna.vhd", 1, 229); // cl (w, cp)
+typeControlKey((HResource) null, "dna.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("dna.vhd", 119, 388); // cl (w, cp)
+selectCodeEditor("dna.vhd", 119, 394); // cl (w, cp)
+selectCodeEditor("dna.vhd", 119, 394, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectCodeEditor("dna.vhd", 35, 183); // cl (w, cp)
+selectCodeEditor("dna.vhd", 42, 194); // cl (w, cp)
+selectCodeEditor("dna.vhd", 173, 247); // cl (w, cp)
+selectCodeEditor("dna.vhd", 138, 301); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("dna.vhd", 112, 293); // cl (w, cp)
+selectCodeEditor("dna.vhd", 182, 302); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("dna.vhd", 273, 165); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("dna.vhd", 230, 162); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("dna.vhd", 280, 316); // cl (w, cp)
+selectCodeEditor("dna.vhd", 272, 317); // cl (w, cp)
+selectCodeEditor("dna.vhd", 271, 250); // cl (w, cp)
+selectCodeEditor("dna.vhd", 273, 364); // cl (w, cp)
+selectCodeEditor("dna.vhd", 271, 379); // cl (w, cp)
+selectCodeEditor("dna.vhd", 272, 368); // cl (w, cp)
+selectCodeEditor("dna.vhd", 270, 336); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("dna.vhd", 211, 313, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("dna.vhd", 169, 324); // cl (w, cp)
+selectCodeEditor("dna.vhd", 165, 317); // cl (w, cp)
+selectCodeEditor("dna.vhd", 0, 316); // cl (w, cp)
+selectCodeEditor("dna.vhd", 120, 318); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("dna.vhd", 232, 316); // cl (w, cp)
+selectCodeEditor("dna.vhd", 240, 316); // cl (w, cp)
+selectCodeEditor("dna.vhd", 240, 316, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("dna.vhd", 191, 318); // cl (w, cp)
+selectCodeEditor("dna.vhd", 63, 311); // cl (w, cp)
+selectCodeEditor("dna.vhd", 32, 322); // cl (w, cp)
+selectCodeEditor("dna.vhd", 32, 322, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("dna.vhd", 30, 324); // cl (w, cp)
+selectCodeEditor("dna.vhd", 2, 320); // cl (w, cp)
+selectCodeEditor("dna.vhd", 5, 360); // cl (w, cp)
+selectCodeEditor("dna.vhd", 41, 328); // cl (w, cp)
+selectCodeEditor("dna.vhd", 59, 318); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("dna.vhd", 264, 212); // cl (w, cp)
+selectCodeEditor("dna.vhd", 286, 209); // cl (w, cp)
+selectCodeEditor("dna.vhd", 285, 371); // cl (w, cp)
+selectCodeEditor("dna.vhd", 267, 361); // cl (w, cp)
+selectCodeEditor("dna.vhd", 284, 406); // cl (w, cp)
+selectCodeEditor("dna.vhd", 288, 402); // cl (w, cp)
+selectCodeEditor("dna.vhd", 268, 401); // cl (w, cp)
+selectCodeEditor("dna.vhd", 286, 261); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("dna.vhd", 265, 269); // cl (w, cp)
+selectCodeEditor("dna.vhd", 285, 378); // cl (w, cp)
+selectCodeEditor("dna.vhd", 264, 378); // cl (w, cp)
+selectCodeEditor("dna.vhd", 287, 365); // cl (w, cp)
+selectCodeEditor("dna.vhd", 269, 367); // cl (w, cp)
+selectCodeEditor("dna.vhd", 287, 331); // cl (w, cp)
+selectCodeEditor("dna.vhd", 262, 337); // cl (w, cp)
+selectCodeEditor("dna.vhd", 268, 332); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("dna.vhd", 138, 196); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("dna.vhd", 161, 193); // cl (w, cp)
+selectCodeEditor("dna.vhd", 261, 221); // cl (w, cp)
+selectCodeEditor("dna.vhd", 270, 215); // cl (w, cp)
+selectCodeEditor("dna.vhd", 131, 121); // cl (w, cp)
+selectCodeEditor("dna.vhd", 121, 107); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("dna.vhd", 287, 231); // cl (w, cp)
+selectCodeEditor("dna.vhd", 302, 232); // cl (w, cp)
+// Elapsed time: 97 seconds
+selectCodeEditor("dna.vhd", 228, 252); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("dna.vhd", 328, 257); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,656 MB. GUI used memory: 68 MB. Current time: 10/30/19, 4:45:54 PM MDT
+// Elapsed time: 252 seconds
+selectCodeEditor("dna.vhd", 175, 387); // cl (w, cp)
+selectCodeEditor("dna.vhd", 164, 389); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 

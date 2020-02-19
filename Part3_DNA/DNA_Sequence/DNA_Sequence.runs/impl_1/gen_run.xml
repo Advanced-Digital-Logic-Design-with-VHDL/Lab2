@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1572642927">
+  <File Type="ROUTE-PWR" Name="dna_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dna.tcl"/>
+  <File Type="BITSTR-BMM" Name="dna_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="dna_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dna_reports.tcl"/>
+  <File Type="OPT-DCP" Name="dna_opt.dcp"/>
+  <File Type="OPT-DRC" Name="dna_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dna.hwdef"/>
+  <File Type="PWROPT-DCP" Name="dna_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="dna_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dna_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dna_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dna_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dna_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dna_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="dna.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dna_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="dna.bin"/>
+  <File Type="PHYSOPT-DCP" Name="dna_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="dna.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dna_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dna_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dna_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dna_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dna_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dna_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="dna.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dna_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="dna.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dna_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dna_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="dna.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="dna_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dna_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dna_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dna_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dna_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dna_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="dna_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dna_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dna_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dna_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dna_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dna_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="dna.bit"/>
+  <File Type="BITSTR-RBT" Name="dna.rbt"/>
+  <File Type="BITSTR-NKY" Name="dna.nky"/>
+  <File Type="BG-DRC" Name="dna.drc"/>
+  <File Type="RDI-RDI" Name="dna.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dna.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dna"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/DNA/Lab2_dna_SequenceDetector.bit">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2_dna_SequenceDetector.bit"/>
+        <Attr Name="ImportTime" Val="1572048760"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
